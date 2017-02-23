@@ -47,7 +47,5 @@
 [core]
 	excludesfile = /Users/alexey/.gitignore_global
 	pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -r
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 [pull]
 	rebase = true

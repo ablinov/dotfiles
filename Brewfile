@@ -13,5 +13,6 @@ cask 'dropbox'
 cask 'spotify'
 cask 'dropbox'
 cask 'slack'
+cask 'sublime-text'
 
 
