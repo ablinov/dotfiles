@@ -8,7 +8,6 @@ export VIM_THEME
 bindkey '^I' complete-word # complete on tab, leave expansion to _expand
 
 TZ="Europe/London"
-HISTFILE=$HOME/.zhistory
 HISTSIZE=20000
 SAVEHIST=20000
 setopt HIST_IGNORE_SPACE
@@ -58,7 +57,7 @@ antigen apply
 # used so Ag can tab complete from ctags file
 fpath=(~/dotfiles/zsh/completion $fpath)
 
-export NVM_DIR="/Users/jackfranklin/.nvm"
+export NVM_DIR="/Users/alexey/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # from https://github.com/creationix/nvm#deeper-shell-integration
@@ -72,7 +71,7 @@ load-nvmrc() {
     local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
 
     if [ "$nvmrc_node_version" != "N/A" ] && [ "$nvmrc_node_version" != "$node_version" ]; then
-      nvm use 
+      nvm use
     fi
   elif [ "$node_version" != "$(nvm version default)" ]; then
     echo "Reverting to nvm default version"
@@ -97,17 +96,15 @@ source $HOME/dotfiles/zsh/secret
 
 export FZF_DEFAULT_COMMAND='ag -g "" --hidden'
 
-export GOPATH=$HOME/git/go
+export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$PATH"
 
 # execute locally installed npm modules
 export PATH="./node_modules/.bin:$PATH"
-
-# put things in ~/.bin into my $PATH
-export PATH="$HOME/.bin:$PATH"
 
 # yarn
 export PATH="$PATH:`yarn global bin`"
 
 source ~/.songkickrc
 export ORGNAME=crowdsurge
+

@@ -1,4 +1,4 @@
-DIR=/Users/jackfranklin/dotfiles
+DIR=/Users/alexey/dotfiles
 
 all:
 	@echo "Run things individually!"
@@ -16,7 +16,6 @@ symlinks:
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
 	@ln -sf $(DIR)/ctags/ctags ~/.ctags
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
-	@ln -sf $(DIR)/bin ~/.bin
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -sf $(DIR)/rbenv ~/.rbenv
 	@ln -sf $(DIR)/npmrc/npmrc ~/.npmrc
@@ -49,15 +48,6 @@ antigen:
 
 tmux:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-term_info:
-	tic term-config/xterm-256color-italic.terminfo
-	tic -x term-config/tmux-256color.terminfo
-
-# See https://github.com/neovim/neovim/issues/2048#issuecomment-78045837 for info
-fix_neovim_ctrl_h:
-	infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
-	tic $TERM.ti
 
 install-global-npms:
 	npm install --global flow-vim-quickfix yarn
