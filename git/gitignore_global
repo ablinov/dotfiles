@@ -13,3 +13,5 @@ _site/
 .bundle/
 .env
 .venv
+.idea
+.sync-config.cson
