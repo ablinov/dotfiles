@@ -54,6 +54,10 @@ antigen bundle robbyrussell/oh-my-zsh plugins/colorize
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle git
+antigen bundle heroku
+antigen bundle rails
+antigen bundle ruby
 antigen apply
 
 # used so Ag can tab complete from ctags file
