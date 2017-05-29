@@ -2,10 +2,10 @@
 autoload -U compinit
 compinit
 
-VIM_THEME="solarized"
-export VIM_THEME
-
 bindkey '^I' complete-word # complete on tab, leave expansion to _expand
+# make delete key delete characters rather than output a ~
+bindkey    "^[[3~"          delete-char
+bindkey    "^[3;5~"         delete-char
 
 TZ="Europe/London"
 HISTFILE=$HOME/.zsh_history
@@ -22,9 +22,6 @@ export GIT_MERGE_AUTOEDIT
 
 # the one true way
 export EDITOR='vim'
-
-# emacs style bindings
-bindkey -e
 
 # load rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
@@ -47,7 +44,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export AUTOENV_FILE_ENTER=".env"
 source $HOME/antigen/antigen.zsh
 
-antigen bundle Tarrasch/zsh-autoenv
+# antigen bundle Tarrasch/zsh-autoenv
 antigen bundle robbyrussell/oh-my-zsh plugins/z
 antigen bundle robbyrussell/oh-my-zsh plugins/colorize
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -81,6 +78,9 @@ export FZF_DEFAULT_COMMAND='ag -g "" --hidden'
 
 export GOPATH=$HOME/go
 export PATH="$GOPATH/bin:$PATH"
+
+setopt auto_cd
+CDPATH=$HOME
 
 # execute locally installed npm modules
 export PATH="./node_modules/.bin:$PATH"
