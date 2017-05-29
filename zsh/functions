@@ -11,7 +11,7 @@ virtualenv_auto_activate() {
 }
 
 cd () {
-  builtin cd "$*"
+  builtin cd $*
   ls
   virtualenv_auto_activate
 }
