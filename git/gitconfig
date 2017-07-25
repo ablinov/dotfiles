@@ -51,3 +51,5 @@
 	pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -r
 [pull]
 	rebase = true
+[commit]
+  template = ~/.git_commit_message

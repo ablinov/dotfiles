@@ -14,15 +14,12 @@ symlinks:
 	@ln -sf $(DIR)/ag/agignore ~/.agignore
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
+	@ln -sf $(DIR)/git/git_commit_message ~/.git_commit_message
 	@ln -sf $(DIR)/ctags/ctags ~/.ctags
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -sf $(DIR)/rbenv ~/.rbenv
 	@ln -sf $(DIR)/npmrc/npmrc ~/.npmrc
-	@mkdir -p ~/.config/nvim
-	@ln -s ~/.vim ~/.config/nvim
-	@ln -s ~/dotfiles/vim/vimrc ~/.config/nvim/init.vim
-	@ln -s ~/dotfiles/vim/vim/UltiSnips ~/.config/nvim/UltiSnips
 
 
 LATEST_RUBY="2.2.3"
