@@ -8,10 +8,19 @@ bindkey    "^[[3~"          delete-char
 bindkey    "^[3;5~"         delete-char
 
 TZ="Europe/London"
+
+# History
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=20000
 SAVEHIST=20000
 setopt HIST_IGNORE_SPACE
+setopt APPEND_HISTORY # Don't erase history
+setopt EXTENDED_HISTORY # Add additional data to history like timestamp
+setopt INC_APPEND_HISTORY # Add immediately
+setopt HIST_FIND_NO_DUPS # Don't show duplicates in search
+setopt NO_HIST_BEEP # Don't beep
+setopt SHARE_HISTORY # Share history between session/terminals
+
 HOSTNAME="`hostname`"
 PAGER='less'
 
