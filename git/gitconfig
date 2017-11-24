@@ -26,6 +26,7 @@
   b = branch
   ignored = !git ls-files -v | grep "^[[:lower:]]"
   prune-local = !git branch --merged | tr -d '*' | grep -v dev | xargs -n1 git branch -d
+	sklone = "!f() { git clone alexey@git.songkick.net:/home/songkick/git/$1; }; f"
 [push]
 	default = simple
 [color]
