@@ -27,6 +27,13 @@
   ignored = !git ls-files -v | grep "^[[:lower:]]"
   prune-local = !git branch --merged | tr -d '*' | grep -v dev | xargs -n1 git branch -d
 	sklone = "!f() { git clone alexey@git.songkick.net:/home/songkick/git/$1; }; f"
+  aliases = config --get-regexp alias
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 15
+  lgall = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+  st = status -sb
+  save = !git add -A && git commit -m 'SAVEPOINT'
+  undo = reset HEAD~1 --mixed
+  wipe = reset --hard HEAD
 [push]
 	default = simple
 [color]
