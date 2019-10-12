@@ -26,8 +26,7 @@
   b = branch
   ignored = !git ls-files -v | grep "^[[:lower:]]"
   prune-local = !git branch --merged | tr -d '*' | grep -v dev | xargs -n1 git branch -d
-	sklone = "!f() { git clone songkick@git.songkick.net:/home/songkick/git/$1; }; f"
-  aliases = config --get-regexp alias
+	aliases = config --get-regexp alias
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 15
   lgall = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
   listallremotebranches = for-each-ref --format=' %(authorname) %09 %(refname)' --sort=authorname refs/remotes
