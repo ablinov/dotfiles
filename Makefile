@@ -39,7 +39,7 @@ nvm:
 	source ~/.nvm/nvm.sh && nvm alias default 6
 
 antigen:
-	cd ~ && git clone https://github.com/zsh-users/antigen.git
+	cd ~ && git clone https://github.com/zsh-users/antigen.git .antigen
 
 tmux:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
