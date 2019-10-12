@@ -11,7 +11,6 @@ tap 'caskroom/cask'
 cask 'google-chrome'
 cask 'dropbox'
 cask 'spotify'
-cask 'dropbox'
 cask 'slack'
 cask 'sublime-text'
 
