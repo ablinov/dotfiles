@@ -51,7 +51,7 @@ export PATH=/opt/apache-maven-3.3.9/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export AUTOENV_FILE_ENTER=".env"
-source $HOME/.antigen/antigen.zsh
+source $HOME/.antigen/repo/antigen.zsh
 
 # antigen bundle Tarrasch/zsh-autoenv
 antigen bundle robbyrussell/oh-my-zsh plugins/z
