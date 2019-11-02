@@ -5,10 +5,12 @@ brew "mas"
 
 mas "1Blocker", id: 1107421413
 mas "DevCleaner for Xcode", id: 1388020431
-mas "Emcee for iTunes", id: 408774844
+mas "Emcee for Music", id: 408774844
+mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pastebot", id: 1179623856
+mas "Reeder 3", id: 880001334
 mas "Slack", id: 803453959
 mas "Soulver 2", id: 413965349
 mas "StopTheMadness", id: 1376402589
