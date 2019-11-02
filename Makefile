@@ -7,7 +7,6 @@ symlinks:
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
 	@ln -sf $(DIR)/zsh/zshenv ~/.zshenv
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
-	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
 	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
 	@ln -sf $(DIR)/ag/agignore ~/.agignore
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
@@ -29,9 +28,6 @@ install_brews:
 	brew tap caskroom/versions
 	brew bundle
 
-python_modules:
-	pip install neovim
-
 nvm:
 	curl https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | sh
 	source ~/.nvm/nvm.sh && nvm install 6
@@ -44,4 +40,4 @@ tmux:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 install-global-npms:
-	npm install --global flow-vim-quickfix yarn
+	npm install --global yarn

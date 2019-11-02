@@ -29,7 +29,6 @@ LC_ALL='en_US.UTF-8'
 GIT_MERGE_AUTOEDIT=no
 export GIT_MERGE_AUTOEDIT
 
-# the one true way
 export EDITOR='vim'
 
 # load rbenv
