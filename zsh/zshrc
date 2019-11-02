@@ -94,4 +94,3 @@ CDPATH=$HOME
 export PATH="./node_modules/.bin:$PATH"
 
 source ~/.songkickrc
-export ORGNAME=crowdsurge
