@@ -15,7 +15,6 @@ symlinks:
 	@ln -sf $(DIR)/ctags/ctags ~/.ctags
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -sf $(DIR)/rbenv ~/.rbenv
-	@ln -sf $(DIR)/npmrc/npmrc ~/.npmrc
 
 
 LATEST_RUBY="2.6.5"
@@ -33,6 +32,3 @@ antigen:
 
 tmux:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-install-global-npms:
-	npm install --global yarn
