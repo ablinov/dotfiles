@@ -15,7 +15,7 @@ mas "Slack", id: 803453959
 mas "Soulver 2", id: 413965349
 mas "StopTheMadness", id: 1376402589
 mas "Things", id:904280696
-mas "Tweetbot", id: 1384080005
+mas "Tweetbot", id: 557168941
 mas "Xcode", id: 497799835
 
 cask "1Password"
