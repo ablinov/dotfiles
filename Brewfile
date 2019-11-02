@@ -1,5 +1,14 @@
 cask_args appdir: "/Applications"
-tap "caskroom/cask"
+
+brew "git"
+brew "jq"
+brew "mysql"
+brew "postgres"
+brew "ruby-build"
+brew "rbenv"
+brew "redis"
+brew "tmux"
+brew "wget"
 
 brew "mas"
 
@@ -38,13 +47,3 @@ cask "tower"
 cask "vlc"
 cask "visual-studio-code"
 cask "whatsapp"
-
-brew "git"
-brew "jq"
-brew "mysql"
-brew "postgres"
-brew "ruby-build"
-brew "rbenv", link: false
-brew "redis"
-brew "tmux"
-brew "wget"
