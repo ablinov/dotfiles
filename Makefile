@@ -28,11 +28,6 @@ install_brews:
 	brew tap Homebrew/cask-versions
 	brew bundle
 
-nvm:
-	curl https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | sh
-	source ~/.nvm/nvm.sh && nvm install 6
-	source ~/.nvm/nvm.sh && nvm alias default 6
-
 antigen:
 	cd ~/.antigen && git clone https://github.com/zsh-users/antigen.git repo
 
