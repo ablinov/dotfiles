@@ -28,6 +28,7 @@ mas "Tweetbot", id: 557168941
 mas "Xcode", id: 497799835
 
 cask "1Password"
+cask "android-studio"
 cask "backblaze"
 cask "daisydisk"
 cask "docker"
