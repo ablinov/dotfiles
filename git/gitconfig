@@ -51,8 +51,6 @@
   whitespace = red reverse
 [help]
   autocorrect = 1
-[url "git@github.com:"]
-  insteadOf = https://github.com
 [core]
   excludesfile = /Users/alexey/.gitignore_global
   pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -r
