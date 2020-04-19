@@ -12,7 +12,6 @@ symlinks:
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
 	@ln -sf $(DIR)/git/git_commit_message ~/.git_commit_message
-	@ln -sf $(DIR)/ctags/ctags ~/.ctags
 	@ln -sf $(DIR)/rbenv ~/.rbenv
 
 
