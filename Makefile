@@ -16,7 +16,7 @@ symlinks:
 	@ln -sf $(DIR)/rbenv ~/.rbenv
 
 
-LATEST_RUBY="2.5.3"
+LATEST_RUBY="2.7.1"
 ruby:
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
