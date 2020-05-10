@@ -1,5 +1,6 @@
 cask_args appdir: "/Applications"
 
+brew "fish"
 brew "git"
 brew "jq"
 brew "mysql"

@@ -14,6 +14,11 @@ symlinks:
 	@ln -sf $(DIR)/git/git_commit_message ~/.git_commit_message
 	@ln -sf $(DIR)/rbenv ~/.rbenv
 
+fish: FORCE
+	grep -Fxe '/usr/local/bin/fish' /etc/shells || echo /usr/local/bin/fish | sudo tee -a /etc/shells
+	@chsh -s /usr/local/bin/fish
+	
+	@ln -nsf $(DIR)/fish ~/.config
 
 LATEST_RUBY="2.7.1"
 ruby:
@@ -30,3 +35,5 @@ antigen:
 
 tmux:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+FORCE: ;
