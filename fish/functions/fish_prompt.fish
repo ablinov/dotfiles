@@ -11,7 +11,8 @@ function fish_prompt
     printf '] '
   end
 
-  echo -n '> '
+  set_color yellow
+  echo -n ' > '
 
   set_color normal
 end
