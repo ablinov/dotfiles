@@ -8,7 +8,7 @@ function fish_prompt
     set_color $fish_color_error
     printf ' ['
     echo -n $last_status
-    printf '] '
+    printf ']'
   end
 
   set_color yellow
