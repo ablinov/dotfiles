@@ -102,11 +102,7 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"BufferScroll",
-		"Markdown",
-		"sublime-clearcase",
-		"Vintage",
-		"Whitespace Diff Trim"
+		"Markdown"
 	],
 	"indent_guide_options":
 	[
