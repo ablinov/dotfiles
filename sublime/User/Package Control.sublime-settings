@@ -1,0 +1,39 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"ApplySyntax",
+		"Babel",
+		"Case Conversion",
+		"Configify",
+		"Crontab",
+		"Cssnext",
+		"Cucumber",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"Markdown Extended",
+		"MarkdownEditing",
+		"MarkdownHighlighting",
+		"nginx",
+		"Package Control",
+		"Pretty JSON",
+		"Pretty YAML",
+		"Puppet",
+		"RSpec",
+		"SublimeERB",
+		"SublimeGit",
+		"Syntax Highlighting for PostCSS",
+		"Terraform",
+		"Theme - Phoenix",
+		"ToggleQuotes",
+		"TypeScript",
+		"Varnish VCL",
+		"YAML Nav"
+	]
+}
