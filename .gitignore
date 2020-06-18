@@ -1,12 +1,4 @@
-vim/vim/bundle
-vim/vim/view
-vim/vim/plugin
-vim/vim/plugged
-vim/vim/.netrwhist
-vim/zsh/cache
-vim/vim/spell
 .DS_Store
-zsh/secret
 rbenv/shims
 rbenv/version
 rbenv/versions

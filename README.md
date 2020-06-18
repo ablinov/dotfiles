@@ -5,10 +5,10 @@ My dotfiles. Shamelessly stolen from Jack Franklin who shamelessy stole them fro
 Files are symlinked into the proper location, and have the `.` added. For example:
 
 ```
-~/dotfiles/zsh/zshrc => ~/.zshrc
 ~/dotfiles/git/gitignore_global => ~/.gitignore_global
 ...and so on
 ```
+
 # Installing
 
 - Swap your shell to ZSH (System Prefs -> Users -> Right Click on 'Advanced Settings' -> select ZSH from dropdown).
