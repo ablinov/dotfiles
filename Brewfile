@@ -28,7 +28,6 @@ mas "Things", id:904280696
 mas "Tweetbot", id: 1384080005
 mas "Xcode", id: 497799835
 
-cask "1Password"
 cask "android-studio"
 cask "backblaze"
 cask "daisydisk"
