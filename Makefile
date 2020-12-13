@@ -1,4 +1,4 @@
-DIR=/Users/alexey/dotfiles
+DIR=/Users/$$(whoami)/dotfiles
 
 symlinks:
 	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
@@ -13,7 +13,7 @@ fish: FORCE
 	grep -Fxe '/usr/local/bin/fish' /etc/shells || echo /usr/local/bin/fish | sudo tee -a /etc/shells
 	@chsh -s /usr/local/bin/fish
 
-	@ln -nsf $(DIR)/fish ~/.config
+	@ln -nsf $(DIR)/ ~/.config
 
 LATEST_RUBY="2.7.1"
 ruby:
