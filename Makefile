@@ -1,4 +1,5 @@
 DIR=/Users/$$(whoami)/dotfiles
+HOMEBREW_DIR=$$(brew --prefix)
 
 symlinks:
 	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
@@ -10,8 +11,8 @@ symlinks:
 	@ln -sf $(DIR)/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 
 fish: FORCE
-	grep -Fxe '/usr/local/bin/fish' /etc/shells || echo /usr/local/bin/fish | sudo tee -a /etc/shells
-	@chsh -s /usr/local/bin/fish
+	grep -Fxe '$(HOMEBREW_DIR)/bin/fish' /etc/shells || echo $(HOMEBREW_DIR)/bin/fish | sudo tee -a /etc/shells
+	@chsh -s $(HOMEBREW_DIR)/bin/fish
 
 	@ln -nsf $(DIR)/ ~/.config
 

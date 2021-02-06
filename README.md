@@ -11,7 +11,9 @@ Files are symlinked into the proper location, and have the `.` added. For exampl
 
 # Installing
 
-- Swap your shell to ZSH (System Prefs -> Users -> Right Click on 'Advanced Settings' -> select ZSH from dropdown).
 - Clone repository (I recommend `~/dotfiles`). If you don't use `~/dotfiles`, you'll have to update a couple of the scripts to point them to the right place.
 - `cd ~/dotfiles`
-- Go through the `Makefile` and run the commands to get the things up that you'd like.
+- Install Homebrew
+- `make install_brews`
+- `make fish`
+- `make symlinks`
