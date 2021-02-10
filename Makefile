@@ -14,7 +14,7 @@ fish: FORCE
 	grep -Fxe '$(HOMEBREW_DIR)/bin/fish' /etc/shells || echo $(HOMEBREW_DIR)/bin/fish | sudo tee -a /etc/shells
 	@chsh -s $(HOMEBREW_DIR)/bin/fish
 
-	@ln -nsf $(DIR)/ ~/.config
+	@ln -nsf $(DIR)/fish/ ~/.config/fish
 
 LATEST_RUBY="2.7.1"
 ruby:
